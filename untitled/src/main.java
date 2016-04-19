@@ -9,7 +9,7 @@ import Phone.childs.TRS;
 
 public class main {
     public static void main(String[] args) {
-        Radio b = new Radio("Lolcatel","Symbian", "0.458", 15000, 50,"Black", true, TRS.LTR);
+        Radio b = new Radio("Lolcatel","Symbian", "0.458", 15000, 50,"Black", true, TRS.LTR); // ConvertTRS(a);
         Smart a = new Smart("Samsung","Android", "4.0.4",10000,140,"Red",2, true, CNS.PDC);
         Home c = new Home("loltel","NoPhoneOS","7.012",10,80,"White",true);
         Mobile d = new Mobile("Mobiluck","MyOS","0.3.5",6000,50,"Yellow",1, false, CNS.CDMA);

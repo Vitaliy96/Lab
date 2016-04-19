@@ -4,29 +4,30 @@ package Phone;
 import java.util.Random;
 
 public abstract class Phone {
-    protected int Range;
+    protected int range;
     protected int price;
     protected String color;
-    protected String OS;
-    protected String Version;
-    protected String Name;
+    protected String operatingSystem;
+    protected String version;
+    protected String name;
     protected Boolean isWorking;
-    protected Phone(String _Name, String _OS, String _Version, int _Range, int _price, String _color, Boolean _isWorking){
-        Name = _Name;
-        OS = _OS;
+    protected Phone(String _Name, String _OS, String _Version, int _Range, int _price, String _color, Boolean _isWorking)
+    {
+        name = _Name;
+        operatingSystem = _OS;
         color = _color;
         price = _price;
         isWorking = _isWorking;
-        Version = _Version;
-        Range = _Range;
+        version = _Version;
+        range = _Range;
     }
 
     public void print(){
-        System.out.print( '\n'+"Name : "+Name+" | OS : "+OS+ " | Version : "+Version +" | Color : " +color +" | Price : "+price);
+        System.out.print( '\n'+"name : "+ name +" | operatingSystem : "+ operatingSystem + " | version : "+ version +" | Color : " +color +" | Price : "+price);
     }
 
     public void checkVersion(){
-        System.out.print('\n'+"OS : "+OS+ " | Version : "+Version);
+        System.out.print('\n'+"operatingSystem : "+ operatingSystem + " | version : "+ version);
     }
 
     public void isWork()
@@ -43,7 +44,8 @@ public abstract class Phone {
         }
     }
 
-    public void updateFirmware() {
+    public void updateFirmware()
+    {
         System.out.print('\n'+"Firmware updated succesfuly. Device is ready to work.");
         isWorking=true;
     }

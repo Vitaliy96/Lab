@@ -3,7 +3,7 @@ import Phone.Phone;
 
 public class Radio extends Phone
 {
-    public TRS TRS;
+    private TRS TRS;
     public Radio(String _Name, String _OS, String _Version, int _Range, int _price, String _color, Boolean _isWorking, TRS _TRS)
     {
         super(_Name, _OS, _Version, _Range, _price, _color, _isWorking);
